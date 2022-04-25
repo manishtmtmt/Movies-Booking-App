@@ -5,13 +5,15 @@ let wallet = document.getElementById("wallet")
 let wallet_balance = JSON.parse(localStorage.getItem("amount"))
 if(wallet_balance==null) {
     wallet.innerText = 0;
+    wallet_balance = 0;
 }else {
     wallet.innerText = wallet_balance;
 }
 
-let balance = 0;
+let balance;
 
 function add(){
+    balance = wallet_balance;
     let addBalance = document.getElementById("amount").value;
     addBalance = +addBalance
     balance += addBalance;
