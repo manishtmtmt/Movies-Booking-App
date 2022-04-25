@@ -13,7 +13,7 @@ let id;
 async function show(){
     try{
         let query = document.getElementById("search").value;
-        let res = await fetch(`http://www.omdbapi.com/?apikey=2096ac23&s=${query}`)
+        let res = await fetch(`https://www.omdbapi.com/?apikey=2096ac23&s=${query}`)
         let data = await res.json();
         return data.Search;
     }
