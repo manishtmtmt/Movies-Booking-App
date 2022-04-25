@@ -1,0 +1,12 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#user-detail, #movie {
+    text-align: center;
+}
+
+#movie{
+    margin-top: 50px;
+}
